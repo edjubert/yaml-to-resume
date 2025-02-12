@@ -24,11 +24,11 @@ jobs:
 
       - name: Convert Markdown to PDF - FR
         run: |
-          pandoc src/FR.md -o output/CV - Edouard Jubert - FR.pdf --pdf-engine=xelatex --from markdown
+          pandoc src/FR.md -o "output/CV - Edouard Jubert - FR.pdf" --pdf-engine=xelatex --from markdown
 
       - name: Convert Markdown to PDF - EN
         run: |
-          pandoc src/EN.md -o output/CV - Edouard Jubert - EN.pdf --pdf-engine=xelatex --from markdown
+          pandoc src/EN.md -o "output/CV - Edouard Jubert - EN.pdf" --pdf-engine=xelatex --from markdown
 
       - name: Upload PDF as Artifact
         uses: actions/upload-artifact@v4
