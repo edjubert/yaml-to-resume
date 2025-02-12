@@ -1,0 +1,37 @@
+name: Generate Resume PDF
+
+on:
+  push:
+    branches:
+      - main # Runs on push to main branch
+  workflow_dispatch: # Allows manual execution
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Install Dependencies
+        run: |
+          sudo apt update
+          sudo apt install -y pandoc wkhtmltopdf
+
+      - name: Convert Markdown to PDF
+        run: |
+          pandoc resume.md -o resume.pdf --pdf-engine=wkhtmltopdf --from markdown --css https://github.com/sindresorhus/github-markdown-css/raw/main/github-markdown.css
+
+      - name: Upload PDF as Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: Resume PDF
+          path: resume.pdf
+
+      - name: Commit PDF to Repository
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions@github.com"
+          git add resume.pdf
+          git commit -m "Update generated resume PDF" || echo "No changes to commit"
+          git push
