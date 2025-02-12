@@ -17,7 +17,19 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
+      - name: Cache TeX Live packages
+        uses: actions/cache@v4
+        with:
+          path: |
+            /usr/share/texlive
+            /usr/local/share/texlive
+            ~/.texlive
+          key: texlive-${{ runner.os }}-${{ hashFiles('src/*.md') }}
+          restore-keys: |
+            texlive-${{ runner.os }}-
+
       - name: Install Dependencies
+        if: steps.cache.outputs.cache-hit != 'true'
         run: |
           sudo apt update
           sudo apt install -y pandoc texlive-xetex
