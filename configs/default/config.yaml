@@ -1,0 +1,64 @@
+info:
+  name: "John Doe"
+  title: "Senior Software Engineer"
+  email: "john.doe@example.com"
+  profile_picture: "./configs/default/assets/me.png"
+  linkedin: "john-doe"
+  github: "johndoe"
+  malt: "johndoe"
+  location: "New York, USA"
+skills:
+  Languages:
+    - "Typescript"
+    - "Golang"
+  Databases:
+    - "PostgreSQL"
+    - "Redis"
+    - "ClickHouse"
+
+experiences:
+  - company: "Tech Corp A"
+    roles:
+      - name: "Senior Software Engineer"
+        date: "2022 - Present"
+        tasks:
+          - "Led backend development for high-traffic microservices"
+          - "Designed and implemented scalable API architecture"
+        technologies:
+          - "Golang"
+          - "PostgreSQL"
+          - "gRPC"
+
+      - name: "Software Engineer"
+        date: "2020 - 2022"
+        tasks:
+          - "Optimized data processing pipelines"
+          - "Implemented analytics solutions"
+        technologies:
+          - "ClickHouse"
+          - "Kafka"
+          - "Python"
+
+  - company: "Tech Corp B"
+    roles:
+      - name: "Software Engineer"
+        date: "2018 - 2020"
+        tasks:
+          - "Developed microservices architecture"
+          - "Built payment processing system"
+          - "Optimized search functionality"
+        technologies:
+          - "Java"
+          - "Elasticsearch"
+          - "AWS Lambda"
+
+education:
+  - school: "Technical University"
+    degree: "Bachelor of Science in Computer Science"
+    date: "2016 - 2020"
+
+languages:
+  - language: "English"
+    level: "Native"
+  - language: "French"
+    level: "Native"
