@@ -17,6 +17,11 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
+      - name: Set up Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: "1.21"
+
       - name: Cache TeX Live packages
         uses: actions/cache@v4
         with:
@@ -36,7 +41,7 @@ jobs:
 
       - name: Convert Markdown to PDF
         run: |
-          ./generate.sh
+          go run cmd/main.go --config=default --lang=en --template=default
 
       - name: Upload PDF as Artifact
         uses: actions/upload-artifact@v4
