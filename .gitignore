@@ -1,2 +1,11 @@
 tmp/
 bin/
+
+configs/*
+!configs/default
+
+output/*
+!output/default
+
+templates/*
+!templates/default
