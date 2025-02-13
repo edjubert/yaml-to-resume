@@ -39,9 +39,13 @@ jobs:
           sudo apt update
           sudo apt install -y pandoc texlive-xetex
 
-      - name: Convert Markdown to PDF
+      - name: Convert Markdown to PDF (en)
         run: |
           go run cmd/main.go --config=default --lang=en --template=default
+
+      - name: Convert Markdown to PDF (fr)
+        run: |
+          go run cmd/main.go --config=default --lang=fr --template=default
 
       - name: Upload PDF as Artifact
         uses: actions/upload-artifact@v4

@@ -1,7 +1,7 @@
 package generator
 
 func GenerateResume(configName, templateName, lang string) error {
-	config, err := LoadConfig(configName, templateName)
+	config, err := LoadConfig(configName, templateName, lang)
 	if err != nil {
 		return err
 	}

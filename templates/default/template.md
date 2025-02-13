@@ -44,8 +44,9 @@ header-includes: |
 
 \vspace{\defaultvspace}
 
-**{{ .Info.Title }}**
+\textbf{ {{- .Info.Title -}} }
 
+\vspace{0cm}
 {{- if .Info.Location -}}
 \textcolor{gray}{ {{- .Info.Location -}} }
 {{- end }}
@@ -55,20 +56,19 @@ header-includes: |
 {{- if or .Info.Email .Info.GitHub .Info.Linkedin .Info.Malt -}}
 
 {{- if .Info.Email -}}
-\small \href{mailto:{{ .Info.Email }}}{\textcolor{black}{\includegraphics[height=\logoheight]{./assets/logos/email.png} {{ .Info.Email }}}}{{- if or .Info.GitHub .Info.Linkedin .Info.Malt -}} | {{- end -}}
+\small \href{mailto:{{ .Info.Email }}}{\textcolor{black}{\includegraphics[height=\logoheight]{./assets/logos/email.png} {{ .Info.Email }}}}{{- if or .Info.GitHub .Info.Linkedin .Info.Malt -}} \space|\space {{- end -}}
 {{- end -}}
+
 {{- if .Info.GitHub -}}
 \small [\includegraphics[height=\logoheight]{./assets/logos/github.png} \textcolor{black}{Github}](https://github.com/{{ .Info.GitHub }})
-{{- if or .Info.Linkedin .Info.Malt -}}
- |
+{{- if or .Info.Linkedin .Info.Malt -}}\space|\space{{- end -}}
 {{- end -}}
-{{- end -}}
+
 {{- if .Info.Linkedin -}}
 \small [\includegraphics[height=\logoheight]{./assets/logos/linkedin.png} \textcolor{black}{LinkedIn}](https://www.linkedin.com/in/edouard-jubert-9a348b58/)
-{{- if or .Info.Malt -}}
- |
+{{- if or .Info.Malt -}} \space|\space {{- end -}}
 {{- end -}}
-{{- end -}}
+
 {{- if .Info.Malt -}}
 \small [\includegraphics[height=\logoheight]{./assets/logos/malt.png} \textcolor{black}{Malt}](https://www.malt.fr/profile/edouardjubert)
 {{- end -}}
@@ -81,8 +81,8 @@ header-includes: |
 \begin{itemize}
 \setlength{\leftskip}{\defaultleftskip}
 {{- range $key, $value := .Skills }}
-\item \textbf{ {{ $key }}: }
-{{- range $index, $value := $value }}{{ if $index }}, {{ end }}{{ $value }}{{- end }}
+\item \textbf{ {{ $value.Label }}: }
+{{- range $index, $value := $value.Items }}{{ if $index }}, {{ end }}{{ $value }}{{- end }}
 {{- end }}
 \end{itemize}
 

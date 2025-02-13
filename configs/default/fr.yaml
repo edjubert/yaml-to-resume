@@ -1,0 +1,42 @@
+info:
+  title: "Ingénieur Logiciel Senior"
+  location: "New York, États-Unis"
+
+skills:
+  Languages:
+    label: "Langages"
+  Databases:
+    label: "Bases de données"
+
+experiences:
+  - company: "Tech Corp A"
+    roles:
+      - name: "Ingénieur Logiciel Senior"
+        date: "2022 - Aujourd'hui"
+        tasks:
+          - "Direction du développement backend pour des microservices à fort trafic"
+          - "Conception et implémentation d'une architecture API évolutive"
+
+      - name: "Ingénieur Logiciel"
+        tasks:
+          - "Optimisation des pipelines de traitement de données"
+          - "Mise en place de solutions d'analyse"
+
+  - company: "Tech Corp B"
+    roles:
+      - name: "Ingénieur Logiciel"
+        tasks:
+          - "Développement d'une architecture microservices"
+          - "Construction d'un système de traitement des paiements"
+          - "Optimisation des fonctionnalités de recherche"
+
+education:
+  - school: "Université Technique"
+    degree: "Licence en Informatique"
+    date: "2016 - 2020"
+
+languages:
+  - language: "Anglais"
+    level: "Natif"
+  - language: "Français"
+    level: "Natif"

@@ -1,0 +1,45 @@
+info:
+  title: "Senior Software pouet"
+
+skills:
+  Languages:
+    label: "Languages"
+  Databases:
+    label: "Databases"
+
+experiences:
+  - company: "Tech Corp A"
+    roles:
+      - name: "Senior Software Engineer"
+        date: "2022 - Present"
+        tasks:
+          - "Led backend development for high-traffic microservices"
+          - "Designed and implemented scalable API architecture"
+
+      - name: "Software Engineer"
+        tasks:
+          - "Optimized data processing pipelines"
+          - "Implemented analytics solutions"
+
+  - company: "Tech Corp B"
+    roles:
+      - name: "Software Engineer"
+        tasks:
+          - "Developed microservices architecture"
+          - "Built payment processing system"
+          - "Optimized search functionality"
+        technologies:
+          - "Java"
+          - "Elasticsearch"
+          - "AWS Lambda"
+
+education:
+  - school: "Technical University"
+    degree: "Bachelor of Science in Computer Science"
+    date: "2016 - 2020"
+
+languages:
+  - language: "English"
+    level: "Native"
+  - language: "French"
+    level: "Native"
