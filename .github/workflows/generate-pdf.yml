@@ -34,13 +34,9 @@ jobs:
           sudo apt update
           sudo apt install -y pandoc texlive-xetex
 
-      - name: Convert Markdown to PDF - FR
+      - name: Convert Markdown to PDF
         run: |
-          pandoc src/FR.md -o "output/CV - Edouard Jubert - FR.pdf" --pdf-engine=xelatex --from markdown
-
-      - name: Convert Markdown to PDF - EN
-        run: |
-          pandoc src/EN.md -o "output/CV - Edouard Jubert - EN.pdf" --pdf-engine=xelatex --from markdown
+          ./generate.sh
 
       - name: Upload PDF as Artifact
         uses: actions/upload-artifact@v4
