@@ -11,24 +11,32 @@ skills:
 experiences:
   - company: "Tech Corp A"
     roles:
-      - name: "Ingénieur Logiciel Senior"
+      - title: "Ingénieur Logiciel Senior"
         date: "2022 - Aujourd'hui"
-        tasks:
-          - "Direction du développement backend pour des microservices à fort trafic"
-          - "Conception et implémentation d'une architecture API évolutive"
+        items:
+          description: "Direction du développement backend pour des microservices à fort trafic"
+          tasks:
+            - "Direction du développement backend pour des microservices à fort trafic"
+            - "Conception et implémentation d'une architecture API évolutive"
 
-      - name: "Ingénieur Logiciel"
-        tasks:
-          - "Optimisation des pipelines de traitement de données"
-          - "Mise en place de solutions d'analyse"
+      - title: "Ingénieur Logiciel"
+        date: "2020 - 2022"
+        items:
+          description: "Optimisation des pipelines de traitement de données"
+          tasks:
+            - "Optimisation des pipelines de traitement de données"
+            - "Mise en place de solutions d'analyse"
 
   - company: "Tech Corp B"
     roles:
-      - name: "Ingénieur Logiciel"
-        tasks:
-          - "Développement d'une architecture microservices"
-          - "Construction d'un système de traitement des paiements"
-          - "Optimisation des fonctionnalités de recherche"
+      - title: "Ingénieur Logiciel"
+        date: "2018 - 2020"
+        items:
+          description: "Développement d'une architecture microservices"
+          tasks:
+            - "Développement d'une architecture microservices"
+            - "Construction d'un système de traitement des paiements"
+            - "Optimisation des fonctionnalités de recherche"
 
 education:
   - school: "Université Technique"

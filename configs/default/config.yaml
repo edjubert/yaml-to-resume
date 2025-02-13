@@ -21,17 +21,15 @@ skills:
 experiences:
   - company: "Tech Corp A"
     roles:
-      - name: ""
+      - title: ""
         date: ""
-        tasks:
         technologies:
           - "Golang"
           - "PostgreSQL"
           - "gRPC"
 
-      - name: ""
+      - title: ""
         date: "2020 - 2022"
-        tasks:
         technologies:
           - "ClickHouse"
           - "Kafka"

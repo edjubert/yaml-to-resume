@@ -10,24 +10,29 @@ skills:
 experiences:
   - company: "Tech Corp A"
     roles:
-      - name: "Senior Software Engineer"
+      - title: "Senior Software Engineer"
         date: "2022 - Present"
-        tasks:
-          - "Led backend development for high-traffic microservices"
-          - "Designed and implemented scalable API architecture"
+        items:
+          description: "Led backend development for high-traffic microservices"
+          tasks:
+            - "Designed and implemented scalable API architecture"
 
-      - name: "Software Engineer"
-        tasks:
-          - "Optimized data processing pipelines"
-          - "Implemented analytics solutions"
+      - title: "Software Engineer"
+        items:
+          description: "Integrated payment processing system"
+          tasks:
+            - "Optimized data processing pipelines"
+            - "Implemented analytics solutions"
 
   - company: "Tech Corp B"
     roles:
-      - name: "Software Engineer"
-        tasks:
-          - "Developed microservices architecture"
-          - "Built payment processing system"
-          - "Optimized search functionality"
+      - title: "Software Engineer"
+        items:
+          description: "Integrated payment processing system"
+          tasks:
+            - "Developed microservices architecture"
+            - "Built payment processing system"
+            - "Optimized search functionality"
         technologies:
           - "Java"
           - "Elasticsearch"

@@ -51,10 +51,15 @@ type Info struct {
 	Location string `mapstructure:"location"`
 }
 
+type Item struct {
+	Description string `mapstructure:"description"`
+	Tasks       []string `mapstructure:"tasks"`
+}
+
 type Role struct {
-	Name        string   `mapstructure:"name"`
+	Title        string   `mapstructure:"title"`
 	Date         string   `mapstructure:"date"`
-	Tasks        []string `mapstructure:"tasks"`
+	Items        []Item   `mapstructure:"items"`
 	Technologies []string `mapstructure:"technologies"`
 }
 

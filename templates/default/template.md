@@ -95,16 +95,20 @@ header-includes: |
 ## \textcolor{darkgray}{ {{- .Company -}} }
 
 {{- range .Roles }}
-#### {{ .Name }}
+#### {{ .Title }}
 
 \textcolor{gray}{ {{ .Date }} }
 
+{{ range .Items }}
+\vspace{\defaultvspace}
+\textbf{\textcolor{darkgray}{ {{ .Description }} }}
 \begin{itemize}
 \setlength{\leftskip}{\defaultleftskip}
 {{- range .Tasks }}
 \item {{ . }}
-{{ end }}
+{{- end }}
 \end{itemize}
+{{- end }}
 
 \textit{Technologies: } {{- range $index, $value := .Technologies }}{{ if $index }}, {{ end }}{{ $value }}{{ end }}
 
