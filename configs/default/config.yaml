@@ -1,12 +1,11 @@
 info:
   name: "John Doe"
-  title: ""
-  email: "john.doe@example.com"
+  email: "johndoe@proton.me"
   profile_picture: "./configs/default/assets/me.png"
-  linkedin: "john-doe"
-  github: "johndoe"
-  malt: "johndoe"
-  location: "New York, USA"
+  linkedin: "https://www.linkedin.com/in/john-doe/"
+  github: "https://github.com/johndoe"
+  malt: "https://www.malt.fr/profile/johndoe"
+  location: "Paris, France"
 skills:
   Languages:
     items:
@@ -17,31 +16,64 @@ skills:
       - "PostgreSQL"
       - "Redis"
       - "ClickHouse"
+  Technologies:
+    items:
+      - "Kafka"
+      - "gRPC"
+  DevOps:
+    items:
+      - "Docker"
+      - "Kubernetes"
+      - "Bazel"
+      - "Git"
+      - "CI/CD"
+      - "AWS"
+      - "GCP"
 
 experiences:
-  - company: "Tech Corp A"
+  - company: "Salesramp"
     roles:
       - title: ""
         date: ""
+        items:
+          - name: ""
         technologies:
-          - "Golang"
+          - "Go"
           - "PostgreSQL"
-          - "gRPC"
+          - "ClickHouse"
+          - "NodeJS"
+          - "Typescript"
+          - "Parse Server"
+
+  - company: "Fastory.io"
+    roles:
+      - title: ""
+        date: ""
+        items:
+          - name: ""
+        technologies:
+          - "Typescript"
+          - "ReactJS"
+          - "NextJS"
+          - "HapiJS"
+          - "AWS"
+          - "Elasticsearch"
+          - "PostgreSQL"
 
       - title: ""
-        date: "2020 - 2022"
+        date: ""
+        items:
+          - name: ""
         technologies:
-          - "ClickHouse"
-          - "Kafka"
-          - "Python"
+          - "Typescript"
+          - "Javascript"
+          - "Heroku"
+          - "ReactJS"
+          - "PostgreSQL"
+          - "HapiJS"
 
-  - company: "Tech Corp B"
-    roles:
-      - name: ""
-        date: "2018 - 2020"
-        tasks:
-        technologies:
-          - "Java"
-          - "Elasticsearch"
-          - "AWS Lambda"
+education:
+  - school: ""
+    degree: ""
+    date: "2013 - 2018"
 

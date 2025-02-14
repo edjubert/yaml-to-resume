@@ -1,50 +1,70 @@
 info:
-  title: "Senior Software pouet"
+  title: "Freelance Backend Developer | Golang, TypeScript"
 
 skills:
   Languages:
     label: "Languages"
   Databases:
     label: "Databases"
+  Technologies:
+    label: "Technologies"
+  DevOps:
+    label: "DevOps"
 
 experiences:
-  - company: "Tech Corp A"
+  - company: "Tech Company"
     roles:
-      - title: "Senior Software Engineer"
-        date: "2022 - Present"
+      - title: "Backend Developer Golang - Freelance"
+        date: "April 2024 - February 2025"
         items:
-          description: "Led backend development for high-traffic microservices"
+          description: "Collaboration with the CTO for product creation."
           tasks:
-            - "Designed and implemented scalable API architecture"
+            - "Architecture and implementation of the ClickHouse database"
+            - "Creation of a Go gRPC server for communication with the ClickHouse database"
+            - "Refactoring and optimization of the API"
+            - "Migration of the API to TypeScript"
+            - "Creation of gRPC communication functions between TypeScript and Go servers"
+            - "Implementation of best practices"
 
-      - title: "Software Engineer"
-        items:
-          description: "Integrated payment processing system"
-          tasks:
-            - "Optimized data processing pipelines"
-            - "Implemented analytics solutions"
-
-  - company: "Tech Corp B"
+  - company: "ATO"
     roles:
-      - title: "Software Engineer"
+      - title: "Lead Full Stack Developer"
+        date: "June 2020 - April 2024"
         items:
-          description: "Integrated payment processing system"
-          tasks:
-            - "Developed microservices architecture"
-            - "Built payment processing system"
-            - "Optimized search functionality"
-        technologies:
-          - "Java"
-          - "Elasticsearch"
-          - "AWS Lambda"
+          - description: "Lead developer of a team of 5-7 developers"
+            tasks:
+              - "Organization of rituals"
+              - "Prioritization of projects"
+              - "Mentoring junior developers"
+              - "Recruitment"
+          - description: "Structural improvement project to manage increased traffic"
+            tasks:
+              - "Migration to microservices"
+              - "Implementation of autoscaling"
+              - "Migration from PostgreSQL to Elasticsearch"
+          - description: "Code improvement project"
+            tasks:
+              - "Migration from JavaScript to TypeScript"
+              - "Creation of React and NextJS components"
+          - description: "Feature additions"
+            tasks:
+              - "Creation of multiple add-ons within the ATO platform"
+              - "Implementation of the SAP/CDC login system in collaboration with Tech Company"
+      - title: "Full Stack Developer"
+        date: "August 2019 - May 2020"
+        items:
+          - description: "Integration into a team of 4 developers"
+            tasks:
+              - "Migration of part of the JavaScript server to a Next server in TypeScript"
+              - "Implementation of features"
+              - "Correction of technical debt"
 
 education:
-  - school: "Technical University"
-    degree: "Bachelor of Science in Computer Science"
-    date: "2016 - 2020"
+  - school: "Super School of Digital"
+    degree: "Full Stack Developer"
 
 languages:
   - language: "English"
-    level: "Native"
+    level: "Full professional proficiency"
   - language: "French"
-    level: "Native"
+    level: "Native language"

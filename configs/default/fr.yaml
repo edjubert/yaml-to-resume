@@ -1,50 +1,70 @@
 info:
-  title: "Ingénieur Logiciel Senior"
-  location: "New York, États-Unis"
+  title: "Développeur Backend Freelance | Golang, TypeScript"
 
 skills:
   Languages:
     label: "Langages"
   Databases:
     label: "Bases de données"
+  Technologies:
+    label: "Technologies"
+  DevOps:
+    label: "DevOps"
 
 experiences:
-  - company: "Tech Corp A"
+  - company: "Tech Company"
     roles:
-      - title: "Ingénieur Logiciel Senior"
-        date: "2022 - Aujourd'hui"
+      - title: "Développeur Backend Golang - Freelance"
+        date: "Avril 2024 - Février 2025"
         items:
-          description: "Direction du développement backend pour des microservices à fort trafic"
+          description: "Collaboration avec le CTO pour la création du produit."
           tasks:
-            - "Direction du développement backend pour des microservices à fort trafic"
-            - "Conception et implémentation d'une architecture API évolutive"
+            - "Architecture et implémentation de la base de données ClickHouse"
+            - "Création d'un serveur Go gRPC pour la communication avec la base de données ClickHouse"
+            - "Refactoring et optimisation de l'API"
+            - "Migration de l'API vers TypeScript"
+            - "Création de fonctions de communication gRPC entre les serveurs TypeScript et Go"
+            - "Mise en place des bonnes pratiques"
 
-      - title: "Ingénieur Logiciel"
-        date: "2020 - 2022"
-        items:
-          description: "Optimisation des pipelines de traitement de données"
-          tasks:
-            - "Optimisation des pipelines de traitement de données"
-            - "Mise en place de solutions d'analyse"
-
-  - company: "Tech Corp B"
+  - company: "ATO"
     roles:
-      - title: "Ingénieur Logiciel"
-        date: "2018 - 2020"
+      - title: "Lead Développeur Full Stack"
+        date: "Juin 2020 - Avril 2024"
         items:
-          description: "Développement d'une architecture microservices"
-          tasks:
-            - "Développement d'une architecture microservices"
-            - "Construction d'un système de traitement des paiements"
-            - "Optimisation des fonctionnalités de recherche"
+          - description: "Lead développeur d'une équipe de 5-7 développeurs"
+            tasks:
+              - "Organisation des rituels"
+              - "Priorisation des projets"
+              - "Mentorat des développeurs juniors"
+              - "Recrutement"
+          - description: "Projet d'amélioration structurelle pour gérer l'augmentation du trafic"
+            tasks:
+              - "Migration en microservices"
+              - "Mise en place de l'autoscaling"
+              - "Migration de PostgreSQL vers Elasticsearch"
+          - description: "Projet d'amélioration du code"
+            tasks:
+              - "Migration de Javascript vers Typescript"
+              - "Création de composants React et NextJS"
+          - description: "Ajouts de fonctionnalités"
+            tasks:
+              - "Création de multiples add-ons au sein de la plateforme ATO"
+              - "Implémentation du système de connexion SAP/CDC en collaboration avec Tech Company"
+      - title: "Développeur Full Stack"
+        date: "Août 2019 - Mai 2020"
+        items:
+          - description: "Intégration dans une équipe de 4 développeurs"
+            tasks:
+              - "Migration d'une partie du serveur Javascript vers un serveur Next en Typescript"
+              - "Implémentation de fonctionnalités"
+              - "Correction de la dette technique"
 
 education:
-  - school: "Université Technique"
-    degree: "Licence en Informatique"
-    date: "2016 - 2020"
+  - school: "Super école du numérique"
+    degree: "Développeur Full Stack"
 
 languages:
   - language: "Anglais"
-    level: "Natif"
+    level: "Maîtrise professionnelle complète"
   - language: "Français"
-    level: "Natif"
+    level: "Langue maternelle"
