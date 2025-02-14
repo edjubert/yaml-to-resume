@@ -1,12 +1,12 @@
-# Resume Generator
+# Yaml to Resume
 
-A command-line tool written in Go that generates professional PDF resumes from YAML configurations using customizable LaTeX templates.
+A command-line tool written in Go that generates professional PDF resumes from YAML configurations using customizable Markdown and LaTeX templates.
 
 ## Features
 
 - Generate PDF resumes from YAML configuration files
 - Support for multiple languages
-- Customizable LaTeX templates
+- Customizable Markdown and LaTeX templates
 - Profile picture support
 - Automatic PDF generation via GitHub Actions
 - Cache support for TeX Live packages
@@ -26,9 +26,14 @@ go mod download
 ```
 
 ## Usage
-
+### Generate a resume
 ```bash
 go run cmd/main.go --config=default --lang=en --template=default
+```
+
+### Generate all resumes
+```bash
+make all
 ```
 
 ### Command Line Options
