@@ -20,8 +20,8 @@ A command-line tool written in Go that generates professional PDF resumes from Y
 ## Installation
 
 ```bash
-git clone https://github.com/edjubert/resume-generator
-cd resume-generator
+git clone https://github.com/edjubert/yaml-to-resume
+cd yaml-to-resume
 go mod download
 ```
 

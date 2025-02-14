@@ -5,7 +5,7 @@ import (
 	"log"
 	"os"
 
-	"github.com/edjubert/resume-generator/internal/generator"
+	"github.com/edjubert/yaml-to-resume/internal/generator"
 
 	"github.com/spf13/cobra"
 )
@@ -18,7 +18,7 @@ var (
 
 func main() {
 	rootCmd := &cobra.Command{
-		Use:   "resume-generator",
+		Use:   "yaml-to-resume",
 		Short: "Generate a multilingual resume",
 		Run: func(cmd *cobra.Command, args []string) {
 			if configName == "" || lang == "" {

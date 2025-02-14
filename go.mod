@@ -1,4 +1,4 @@
-module github.com/edjubert/resume-generator
+module github.com/edjubert/yaml-to-resume
 
 go 1.23.1
 

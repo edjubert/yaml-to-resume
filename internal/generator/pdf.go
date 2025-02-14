@@ -7,8 +7,8 @@ import (
 	"path/filepath"
 )
 
-func GeneratePDF(markdownFile, configName, lang string) error {
-	outputDir := filepath.Join("output", configName)
+func GeneratePDF(markdownFile, configName, templateName, lang string) error {
+	outputDir := filepath.Join("output", configName, templateName)
 	os.MkdirAll(outputDir, os.ModePerm)
 
 	pdfFile := filepath.Join(outputDir, lang+".pdf")

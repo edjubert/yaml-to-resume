@@ -11,7 +11,7 @@ func GenerateResume(configName, templateName, lang string) error {
 		return err
 	}
 
-	err = GeneratePDF(mdFile, configName, lang)
+	err = GeneratePDF(mdFile, configName, templateName, lang)
 	if err != nil {
 		return err
 	}
