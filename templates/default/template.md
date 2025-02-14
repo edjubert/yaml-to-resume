@@ -1,6 +1,5 @@
 ---
 documentclass: extarticle
-title: {{ .Info.Name }}
 geometry: margin=1cm
 fontsize: 9pt
 header-includes: |
@@ -44,7 +43,9 @@ header-includes: |
 
 \vspace{\defaultvspace}
 
-\textbf{ {{- .Info.Title -}} }
+# {{ .Info.Name }}
+
+**{{ .Info.Title }}**
 
 \vspace{0cm}
 {{- if .Info.Location -}}
@@ -60,17 +61,17 @@ header-includes: |
 {{- end -}}
 
 {{- if .Info.GitHub -}}
-\small [\includegraphics[height=\logoheight]{./assets/logos/github.png} \textcolor{black}{Github}](https://github.com/{{ .Info.GitHub }})
+\small [\includegraphics[height=\logoheight]{./assets/logos/github.png} \textcolor{black}{Github}]({{ .Info.GitHub }})
 {{- if or .Info.Linkedin .Info.Malt -}}\space|\space{{- end -}}
 {{- end -}}
 
 {{- if .Info.Linkedin -}}
-\small [\includegraphics[height=\logoheight]{./assets/logos/linkedin.png} \textcolor{black}{LinkedIn}](https://www.linkedin.com/in/edouard-jubert-9a348b58/)
+\small [\includegraphics[height=\logoheight]{./assets/logos/linkedin.png} \textcolor{black}{LinkedIn}]({{ .Info.Linkedin }})
 {{- if or .Info.Malt -}} \space|\space {{- end -}}
 {{- end -}}
 
 {{- if .Info.Malt -}}
-\small [\includegraphics[height=\logoheight]{./assets/logos/malt.png} \textcolor{black}{Malt}](https://www.malt.fr/profile/edouardjubert)
+\small [\includegraphics[height=\logoheight]{./assets/logos/malt.png} \textcolor{black}{Malt}]({{ .Info.Malt }})
 {{- end -}}
 
 {{- end }}

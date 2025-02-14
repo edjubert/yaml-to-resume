@@ -23,5 +23,6 @@ func GeneratePDF(markdownFile, configName, templateName, lang string) error {
 		return fmt.Errorf("error generating PDF: %w", err)
 	}
 
+	fmt.Printf("PDF generated successfully: %s\n", pdfFile)
 	return nil
 }

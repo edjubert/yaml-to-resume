@@ -25,13 +25,11 @@ func main() {
 				log.Fatal("Please provide --config and --lang")
 			}
 
-		err := generator.GenerateResume(configName, template, lang)
-		if err != nil {
-			fmt.Println("Error generating resume: ", err)
-			os.Exit(1)
-		}
-
-		fmt.Println("Resume generated successfully")
+			err := generator.GenerateResume(configName, template, lang)
+			if err != nil {
+				fmt.Println("Error generating resume: ", err)
+				os.Exit(1)
+			}
 		},
 	}
 
