@@ -76,7 +76,6 @@ header-includes: |
 
 {{- end }}
 
-
 # SKILLS
 
 \begin{itemize}
@@ -96,13 +95,16 @@ header-includes: |
 ## \textcolor{darkgray}{ {{- .Company -}} }
 
 {{- range .Roles }}
+
 #### {{ .Title }}
 
 \textcolor{gray}{ {{ .Date }} }
 
 {{ range .Items }}
+{{- if .Description }}
 \vspace{\defaultvspace}
 \textbf{\textcolor{darkgray}{ {{ .Description }} }}
+{{- end }}
 \begin{itemize}
 \setlength{\leftskip}{\defaultleftskip}
 {{- range .Tasks }}
@@ -116,7 +118,6 @@ header-includes: |
 {{ end }}
 {{- end }}
 
-
 \vspace{\defaultvspace}
 
 # EDUCATION
@@ -127,7 +128,6 @@ header-includes: |
 \textcolor{gray}{ {{ .Date }} }
 
 {{ end }}
-
 
 \vspace{\defaultvspace}
 
